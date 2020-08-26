@@ -4,6 +4,7 @@ USER root
 
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    iputils-ping \
     openssh-client \
     openssh-server \
     rsync \
@@ -27,5 +28,7 @@ RUN pip3 install -r ~/requirements.txt
 
 RUN ssh-keygen -t rsa -f ~/.ssh/id_rsa -P "" && chmod -R 700 ~/.ssh && \
     cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys2
+
+RUN mkdir ~/ansible && echo localhost > ~/ansible/hosts
 
 CMD ["/home/jovyan/start.sh"]
