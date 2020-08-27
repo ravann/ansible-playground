@@ -1,5 +1,7 @@
 FROM jupyter/base-notebook:python-3.8.3
 
+LABEL maintainer=Ravan Nannapaneni
+
 USER root
 
 RUN apt-get update -y && \
