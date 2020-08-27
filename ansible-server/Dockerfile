@@ -1,6 +1,6 @@
 FROM jupyter/base-notebook:python-3.8.3
 
-LABEL maintainer=Ravan Nannapaneni
+LABEL maintainer="Ravan Nannapaneni"
 
 USER root
 
