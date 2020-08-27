@@ -25,8 +25,8 @@ You will see the below lines in the logs:
 
 Copy-paste the url "127.0.0.1" into the browser to launch the Jupyter. You can launch the terminal using the new button.
 
-![Jupyter Image](images/jupyter_interface.png)
+![Jupyter Image](https://raw.githubusercontent.com/ravann/ansible-playground/master/ansible-server/images/jupyter_interface.png)
 
 **Trying ansible**
 
-![Ansible Image](images/ansible_command.png)
+![Ansible Image](https://raw.githubusercontent.com/ravann/ansible-playground/master/ansible-server/images/ansible_command.png)
