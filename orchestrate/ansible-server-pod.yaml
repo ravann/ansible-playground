@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ansible-server
+  labels:
+    app: ansible-server
+    rel: stable
+spec:
+  containers:
+    - name: ansible-server
+      image: ravann/ansible-server:latest
+      ports:
+        - containerPort: 8888
